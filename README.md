@@ -13,31 +13,14 @@ This repository provides Nix packages for Bitcoin Core's bitcoinkernel/libbitcoi
 
 ### Language Bindings
 - **bitcoinkernel-jdk** - Java/JDK FFM wrapper
-- **go-bitcoinkernel** - Go bindings (todo!)
-- **rust-bitcoinkernel** - Rust bindings (todo!)
-- **py-bitcoinkernel** - Python wrapper (todo!)
-- **bitcoinkernel-dotnet** - .NET bindings (todo!)
-
-## Usage
-
-### Using with Nix Flakes
-
-```nix
-{
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nix-bitcoinkernel.url = "github:yuvicc/nix-bitcoinkernel";
-  };
-
-  outputs = { self, nixpkgs, nix-bitcoinkernel }: {
-    # Use in your NixOS configuration or flake
-  };
-}
-```
+- **go-bitcoinkernel** - Go bindings (*todo!*)
+- **rust-bitcoinkernel** - Rust bindings (*todo!*)
+- **py-bitcoinkernel** - Python wrapper (*todo!*)
+- **bitcoinkernel-dotnet** - .NET bindings (*todo!*)
 
 ### Development Shells
 
-Enter a development environment for your language of choice(only cpp and java is available right now):
+Enter a development environment for your language of choice (*only cpp and java is available right now*):
 
 ```bash
 # C/C++ development
