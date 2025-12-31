@@ -1,0 +1,31 @@
+# Nix
+result
+result-*
+.direnv/
+
+# Language-specific
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+dist/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.so
+*.dylib
+*.dll
+*.exe
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
