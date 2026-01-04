@@ -32,10 +32,8 @@ stdenv.mkDerivation rec {
     boost
   ];
 
-  # Disable configure phase - this is a Gradle project
   dontUseCmakeConfigure = true;
 
-  # Gradle will build everything including Bitcoin Core
   mangle_dylib = false;
 
   gradleFlags = [
@@ -57,7 +55,6 @@ stdenv.mkDerivation rec {
     runHook preBuild
 
     # Build using gradle wrapper
-    # This will build Bitcoin Core and the Java wrapper
     ./gradlew build ${toString gradleFlags}
 
     runHook postBuild
@@ -69,11 +66,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/lib
     mkdir -p $out/share/java
 
-    # Copy the built JAR files
     cp -r build/libs/*.jar $out/lib/
-
-    # Create a wrapper script if needed
-    # This could set up the Java library path to find libbitcoinkernel
 
     runHook postInstall
   '';

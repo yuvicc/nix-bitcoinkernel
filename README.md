@@ -13,8 +13,8 @@ This repository provides Nix packages for Bitcoin Core's bitcoinkernel/libbitcoi
 
 ### Language Bindings
 - **bitcoinkernel-jdk** - Java/JDK FFM wrapper
+- **rust-bitcoinkernel** - Rust bindings
 - **go-bitcoinkernel** - Go bindings (*todo!*)
-- **rust-bitcoinkernel** - Rust bindings (*todo!*)
 - **py-bitcoinkernel** - Python wrapper (*todo!*)
 - **bitcoinkernel-dotnet** - .NET bindings (*todo!*)
 
@@ -48,8 +48,8 @@ This project is experimental and tracks the development of libbitcoinkernel and 
 
 - libbitcoinkernel has been merged into Bitcoin Core but has no official release yet
 - All language bindings are in active development
-- C/C++ and JDK packages are working currently.
-- Implement Rust, Go, Python and Dotnet bindings packages.
+- C/C++, JDK and Rust packages are working currently.
+- Implement Go, Python and Dotnet bindings packages.
 
 ## Contributing
 
